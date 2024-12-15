@@ -1,65 +1,45 @@
-<<<<<<< HEAD
 # AG-Grid-Demo
-=======
-# AG Grid Finance Demo (Angular)
 
-The [AG Grid Finance Demo](https://ag-grid.com/example-finance/) code in Angular.
+This repository showcases a demo implementation of **AG Grid** in an Angular application, illustrating its advanced data grid capabilities such as sorting, filtering, pagination, and more.
+
+## Features
+
+- **Sorting and Filtering**: Users can easily sort and filter data directly within the grid.
+- **Pagination**: Seamlessly navigate through large datasets.
+- **Custom Cell Rendering**: Example of rendering custom components within grid cells.
+- **Themes and Styling**: Demonstrates the use of AG Grid's themes and custom styling options.
+- **Enterprise Features**: Includes advanced options like rich select, row grouping, and Excel export (if Enterprise modules are enabled).
 
 ## Getting Started
 
-1. Get a copy of this folder using [degit](https://github.com/Rich-Harris/degit) (without the git respository files):
+Clone this repository to your local system:
 
-   ```
-   npx degit ag-grid/ag-grid-demos/finance/angular ag-grid-finance-example-angular
-   cd ag-grid-finance-example-angular
-   ```
+```bash
+git clone https://github.com/Prashant-Deokar/AG-Grid-Demo.git
+cd AG-Grid-Demo
 
-   Alternatively, you can get the files using `git clone`:
+Install Dependencies
+Install the required dependencies for the project:
 
-   ```
-   git clone git@github.com:ag-grid/ag-grid-demos.git
-   cd ag-grid-demos/finance/angular
-   ```
+bash
+npm install
+This will install the following dependencies:
 
-2. Install dependencies: `npm install`
-3. Install the Angular CLI: `npm install -g @angular/cli`
-4. Run the dev server: `ng serve`
+AG Grid: The core grid functionality, including features like sorting, filtering, pagination, and custom cell rendering.
+AG Grid Enterprise Modules (if required): Includes advanced enterprise features like row grouping, Excel export, and rich select.
+The dependencies are as follows:
 
-## How It Was Built
+@ag-grid-community/angular
+@ag-grid-community/core
+@ag-grid-community/styles
+Optional Enterprise Modules:
 
-This example code was generated with the [Angular CLI](https://github.com/angular/angular-cli) using:
+@ag-grid-enterprise/rich-select
+@ag-grid-enterprise/row-grouping
+@ag-grid-enterprise/excel-export
+Run the Application
+Start the development server:
 
-```
-ng new finance/angular
-
-# With the addition of the following modules
-npm i @ag-grid-community/angular \
-  @ag-grid-community/styles \
-  @ag-grid-community/core \
-  @ag-grid-community/client-side-row-model \
-  @ag-grid-enterprise/advanced-filter \
-  @ag-grid-enterprise/charts-enterprise \
-  @ag-grid-enterprise/column-tool-panel \
-  @ag-grid-enterprise/excel-export \
-  @ag-grid-enterprise/filter-tool-panel \
-  @ag-grid-enterprise/menu \
-  @ag-grid-enterprise/range-selection \
-  @ag-grid-enterprise/rich-select \
-  @ag-grid-enterprise/row-grouping \
-  @ag-grid-enterprise/set-filter \
-  @ag-grid-enterprise/sparklines \
-  @ag-grid-enterprise/status-bar
-```
-
-<br /><br />
-
-## Support
-
-### Enterprise Support
-
-AG Grid Enterprise customers have access to dedicated support via [ZenDesk](https://ag-grid.zendesk.com/hc/en-us), which is monitored by our engineering teams.
-
-### Bug Reports
-
-If you have found a bug, please report it in our main repository's [issues](https://github.com/ag-grid/ag-grid/issues) section.
->>>>>>> a7fbcc9 (Initial commit for AG Grid Demo)
+bash
+ng serve
+The application will be available at: http://localhost:4200.
